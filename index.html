@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap-tabtodropdown.js</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="js/gt.css">
+    <link rel="stylesheet" href="css/bootstrap-tabtodropdown.css">
+  </head>
+  <body>
+
+    <div class="main">
+        <h1>Too many tabs fix</h1>
+
+        <section class="section section-tabtodropdown">
+            <h2>bootstrap-tabtodropdown.js</h2>
+            <div role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">All</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Expired Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Long German translation</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <h3>All</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <h3>Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <h3>Expired Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <h3>Super long German tab name</h3>
+                </div>
+              </div>
+
+            </div> <!-- end tabpanel -->
+        </section>
+
+        <section class="section section-tabdrop">
+            <h2>bootstrap-tabdrop.js</h2>
+            <div role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home2" aria-controls="home" role="tab" data-toggle="tab">All</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile2" aria-controls="profile" role="tab" data-toggle="tab">Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#messages2" aria-controls="messages" role="tab" data-toggle="tab">Expired Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings2" aria-controls="settings" role="tab" data-toggle="tab">Long German translation</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home2">
+                    <h3>All</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile2">
+                    <h3>Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages2">
+                    <h3>Expired Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings2">
+                    <h3>Super long German tab name</h3>
+                </div>
+              </div>
+
+            </div> <!-- end tabpanel -->
+        </section>
+
+        <section class="section section-control">
+            <h2>Current tabs</h2>
+            <div role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#home3" aria-controls="home" role="tab" data-toggle="tab">All</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile3" aria-controls="profile" role="tab" data-toggle="tab">Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#messages3" aria-controls="messages" role="tab" data-toggle="tab">Expired Subscriptions</a>
+                </li>
+                <li role="presentation">
+                    <a href="#settings3" aria-controls="settings" role="tab" data-toggle="tab">Long German translation</a>
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home3">
+                    <h3>All</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile3">
+                    <h3>Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages3">
+                    <h3>Expired Subscriptions</h3>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings3">
+                    <h3>Super long German tab name</h3>
+                </div>
+              </div>
+
+            </div> <!-- end tabpanel -->
+        </section>
+
+    </div> <!-- end main -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/bootstrap-tabdrop.js"></script>
+    <script src="js/bootstrap-tabtodropdown.js"></script>
+
+    <script>
+        $('.section-tabtodropdown .nav-tabs').tabtodropdown(
+            {
+                //text: 'stuff....',
+                offsetTop: 0
+            }
+        );
+        $('.section-tabdrop .nav-tabs').tabdrop();
+    </script>
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+
+  </body>
+</html>
